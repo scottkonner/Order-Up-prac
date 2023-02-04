@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="delete" action="{{ url_for('.logout') }}">
+  {{ form.csrf_token }}
+  <div>
+
+  </div>
+  <div>{{ form.submit }}</div>
+</form>
+{% endblock %}
